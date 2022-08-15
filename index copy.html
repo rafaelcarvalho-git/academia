@@ -7,42 +7,131 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar fixed-top navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Academia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav bg-info">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link" href="#">Pricing</a>
+    <div class="navbar-nav">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#quem-somos">Quem Somos</a>
+        <a class="nav-link" href="#modalidades">Modalidades</a>
+        <a class="nav-link" href="#contatos">Contato</a>
     </div>
     </div>
   </div>
 </nav>
-<header>
+<style>
+    nav{
+      border-bottom: 2px solid #272727;
+      /*height: 8vh;*/
+      display: flex;
+      align-items: center;
+    }.navbar-nav{margin-left:auto;}
+  </style>
+<header id="home">
     <div class="bg-primary d-flex" style="height:360px;">
         <h1 class="mx-auto my-auto text-center px-1">TurimRTE: Automação e gestão de atividades fiscais</h1>
     </div>
 </header>
 
 <section id="quem-somos" class="bg-info">
-    <h2>Quem Somos</h2>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://enotas.com.br/blog/wp-content/uploads/2019/10/softwares-para-academia.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Quem Somos</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          </div>
+        </div>
 </section>
-<section id="modalidades" class="bg-success">
-    <h2>Modalidades</h2>
+<section id="modalidades" class="bg-dark" style="height:400px;">
+    <h2 class="text-center text-white pt-3">Modalidades</h2>
+    <div class="container py-4 d-flex flex-row flex-wrap justify-content-evenly">
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">musculacao</h4>
+      </div>
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">funcional</h4>
+      </div>
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">capoeira</h4>
+      </div>
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">muay thai</h4>
+      </div>
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">pilates</h4>
+      </div>
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">jiu-jitsu</h4>
+      </div>
+    </div>  <style>
+        .container{max-width:1000px;}
+        .modalidade {
+          width: 250px;
+          height: 120px;
+          margin: auto auto 32px auto;
+          border: 4px solid white;
+          border-radius: 10px;
+        }.modalidade i {font-size: 40px;}
+    
+        .contato-item .icon {
+          width: 42px;
+          height: 42px;
+        }.contato-item .bi {font-size: 18.5px;}
+        #ft{border-bottom:2.5px solid rgb(230, 80, 80);}
+      </style>
+  </section>
+<section id="planos" class="bg-info" style="height:400px;">
+    <h2 class="text-center text-white pt-3">Planos</h2>
+    <div class="d-flex">
+      <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">simples</h4>
+        </div>
+        <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">top</h4>
+        </div>
+        <div class="modalidade text-center">
+        <i class="bi bi-piggy-bank mx-auto text-white"></i>
+        <h4 class="text-center text-white">premium</h4>
+      </div>
+    </div>
+
 </section>
-<section id="planos" class="bg-danger">
-    <h2>Planos</h2>
+<section id="contatos" class="bg-danger" style="height:400px;">
+    <h2 class="text-center text-white pt-3">Contatos</h2>
+    <div class="d-flex bg-info">
+        <div class="bg-primary" style="width:50%;">
+            <h4 class="text-center">Informações para Contato</h4>
+            <div class="informacoes">
+
+            </div>
+        </div>
+        <div class="bg-success" style="width:50%;">
+            <h4 class="text-center">Mapa com Localização</h4>
+        <div class="localizacao text-center">      
+            <iframe class="rounded" width="480" height="280" src="https://maps.google.com/maps?q=juazeiro%20do&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            
+        </div>
+        <p class="text-center">Rua da Academia, Centro, 101</p>
+        </div>        
+    </div>
 </section>
-<section id="contatos" class="bg-danger">
-    <h2>Contatos</h2>
-</section>
-<footer>
-    footer
+<footer class="bg-dark">
+    <div class="text-white text-center py-4" style="border-top: 1px solid red;">&copy; 2022 - Academia</div>    
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
