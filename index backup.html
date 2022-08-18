@@ -8,7 +8,6 @@
   <meta name="keywords" content="portfolio, academia, saude, fit, musculacao">
   <title>Academia</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
@@ -28,15 +27,42 @@
     </div>
   </div>
 </nav>
-
+<style>
+  nav{
+    border-bottom: 2px solid #272727;
+    display: flex;
+    align-items: center;
+  }.navbar-nav{margin-left:auto;}    
+</style>
 <header id="home">
-  <div style="height:500px;">
-    <div class="imagem01">
-      <h1 class="header-titulo text-white">Academia Teste</h1>
-      <h4 class="header-titulo frase text-white">Venha conhecer nossa academia com os melhores profissionais.</h4>
-    </div>        
-  </div>
+    <div style="height:500px;">
+      <div class="imagem01">
+        <h1 class="header-titulo text-white">Academia Teste</h1>
+        <h4 class="header-titulo frase text-white">Venha conhecer nossa academia com os melhores profissionais.</h4>
+      </div>
+        
+    </div>
+    <style>
+      .imagem01 {
+        position: relative;
+        background-image: url(img/paralax.png);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .header-titulo {
+        position: absolute;
+        left: 0;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+      }.frase{top:58%;}  
+    </style>
 </header>
+
 
 <section id="quem-somos" class="bg-info">
   <div class="container py-3">
@@ -70,7 +96,26 @@
         <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
     </div>
   </div>
+  <style>
+   #carousel-quem-somos {
+    border: 2px solid #4F4F4F;
+   }
+ 
+  @media (max-width:767px) {
+    .imagem-academia {
+      margin: auto;
+      width: 100%;
+      height: 80%;
+    }
+    .imagem {
+    
+      margin: auto;
+    }
+  }
+  </style>
 </section>
+
+
 
 <section id="modalidades" class="bg-dark">
   <div class="container">
@@ -78,71 +123,149 @@
     <div class="container py-4 d-flex flex-row flex-wrap justify-content-evenly">
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
-        <h4 class="text-center text-white">Musculação</h4>
+        <h4 class="text-center text-white">musculacao</h4>
       </div>
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
-        <h4 class="text-center text-white">Funcional</h4>
+        <h4 class="text-center text-white">funcional</h4>
       </div>
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
-        <h4 class="text-center text-white">Step</h4>
+        <h4 class="text-center text-white">capoeira</h4>
       </div>
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
-        <h4 class="text-center text-white">Muay Thai</h4>
+        <h4 class="text-center text-white">muay thai</h4>
       </div>
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
-        <h4 class="text-center text-white">Pilates</h4>
+        <h4 class="text-center text-white">pilates</h4>
       </div>
       <div class="modalidade text-center">
         <i class="bi bi-piggy-bank mx-auto text-white"></i>
         <h4 class="text-center text-white">jiu-jitsu</h4>
       </div>
     </div>  
-    <h4 class="text-center text-white px-3 py-2 bg-info w-50 mx-auto my-0">VENHA FAZER UMA AULA EXPERIMENTAL</h4>
+    <h4 class="text-center text-white px-3 py-3 bg-info w-50 mx-auto">VENHA FAZER UMA AULA EXPERIMENTAL</h4>
   </div>
-  
-</section>
 
-<section id="academia" class="bg-info">
-  <div class="container d-flex py-5">
-    <div class="card mx-auto my-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/equipamentos.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Melhores Equipamentos</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <style>
+        .container{max-width:1000px;}
+        .modalidade {
+          width: 250px;
+          height: 120px;
+          margin: auto auto 32px auto;
+          border: 4px solid white;
+          border-radius: 10px;
+        }.modalidade i {font-size: 40px;}
+    
+        .contato-item .icon {
+          width: 42px;
+          height: 42px;
+        }.contato-item .bi {font-size: 18.5px;}
+        #ft{border-bottom:2.5px solid rgb(230, 80, 80);}
+      </style>
+  </section>
+
+  <section id="academia" class="bg-info">
+    <div class="container d-flex py-5">
+      <div class="card mx-auto my-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/equipamentos.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Melhores Equipamentos</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
       </div>
+      <div class="card mx-auto my-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/personal.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Profissionais especializados</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto my-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/quemsomos.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>            
     </div>
-    <div class="card mx-auto my-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/personal.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Profissionais especializados</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <style>
+      .imagem-academia {
+        width: 50%;
+      }
+    @media (max-width:767px) {
+      .imagem-academia {
+        margin: auto;
+        width: 100%;
+        height: 80%;
+      }
+    }
+    </style>
+  </section>
+
+<!--<section id="planos" class="bg-info">
+  <div class="container">
+    <h2 class="text-center text-white pt-3">Nossos Planos</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center pb-2">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-2">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
       </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-2">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-2">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="card mx-auto my-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/quemsomos.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Planos excelentes</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>            
   </div>
-  <style>
-    .imagem-academia {
-      width: 50%;
-    }
-  @media (max-width:767px) {
-    .imagem-academia {
-      margin: auto;
-      width: 100%;
-      height: 80%;
-    }
-  }
-  </style>
-</section>
+</section>-->
+
+
 
 <section id="contatos" class="bg-dark">
   <div class="container">
