@@ -1,31 +1,31 @@
 /*header*/
 .imagem01 {
-    position: relative;
-    background-image: url(../img/paralax.png);
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .header-titulo {
-    position: absolute;
-    left: 0;
-    top: 45%;
-    width: 100%;
-    text-align: center;
-  }.frase{top:58%;}  
+  position: relative;
+  background-image: url(../img/paralax.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}.frase{top:58%;}  
 
 /*quem somos*/
   .slider {
-    width: 50%;
+    width: 45%;
   }
 
 @media (max-width:767px) {
   .slider {
     margin: auto;
-    width: 70%;
+    width: 75%;
     margin-bottom: 32px;
   }
 }
@@ -68,16 +68,9 @@
 
 /*contatos*/
 .informacoes,.mapa{width:50%;}.map{width:95%;}
-.informacoes .bi {
-  font-size: 20px;
-  color: #0dcaf0;
-}
-.informacoes a {
-  color: white;
-}
-.informacoes a:hover {
-  color: #0dcaf0;
-}
+.informacoes .bi {font-size: 20px;color: #0dcaf0;}
+.informacoes a{color:white;}
+.informacoes a:hover{color:#0dcaf0;}
 /*.informacoes a:hover {
   display: inline-block;
   vertical-align: middle;
@@ -101,6 +94,7 @@
   .informacoes, .mapa{
     width: 100%;          
   }
+
   .mapa {
     padding-top: 10px;
   }
