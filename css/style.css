@@ -1,5 +1,5 @@
 /*header*/
-.imagem01 {
+.background {
   position: relative;
   background-image: url(../img/paralax.png);
   height: 100%;
@@ -9,19 +9,18 @@
   background-position: center;
   background-attachment: fixed;
 }
-.header-titulo {
+.header-items {
   position: absolute;
   left: 0;
   top: 45%;
   width: 100%;
   text-align: center;
-}.frase{top:58%;}  
+}
 
 /*quem somos*/
-  .slider {
-    width: 45%;
-  }
-
+.slider {
+  width: 45%;
+}
 @media (max-width:767px) {
   .slider {
     margin: auto;
@@ -31,20 +30,20 @@
 }
 
 /*modalidades*/
-.container{max-width:1000px;}
 .modalidade {
-  width: 250px;
-  height: 120px;
-  margin: auto auto 32px auto;
+  width: 220px;
   border: 4px solid white;
-  border-radius: 10px;
-}.modalidade i {font-size: 40px;}
+}
+#modalidades .container div{
+  max-width: 1080px;
+}
+@media (min-width:992px) and (max-width:1200px) {
+  .modalidade {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
 
-.contato-item .icon {
-  width: 42px;
-  height: 42px;
-}.contato-item .bi {font-size: 18.5px;}
-#ft{border-bottom:2.5px solid rgb(230, 80, 80);}
 .aula-experimental {
   width: 50%;
 }
@@ -58,11 +57,11 @@
   width: 50%;
 }
 @media (max-width:767px) {
-.imagem-academia {
-  margin: auto;
-  width: 100%;
-  height: 80%;
-}
+  .imagem-academia {
+    margin: auto;
+    width: 100%;
+    height: 80%;
+  }
 }
 
 
