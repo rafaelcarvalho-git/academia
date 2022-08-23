@@ -158,3 +158,20 @@
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
+
+/*efeito revelar quando rola pagina*/
+.reveal {
+  position: relative;
+  transform: translateY(144px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.plano {
+  background: rgb(2,0,36);
+background: linear-gradient(180deg, rgb(58, 120, 201) 0%, rgb(77, 108, 221) 35%, rgba(2,175,230,1) 87%, rgba(0,212,255,1) 100%);
+}
