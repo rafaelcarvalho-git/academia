@@ -12,7 +12,7 @@
 .header-items {
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 25%;
   width: 100%;
   text-align: center;
 }
@@ -30,13 +30,8 @@
 }
 
 /*modalidades*/
-.modalidade {
-  width: 220px;
-  border: 4px solid white;
-}
-#modalidades .container div{
-  max-width: 1080px;
-}
+.modalidade{width:220px;border:4px solid white;}
+#modalidades .container div{max-width:1080px;}
 @media (min-width:992px) and (max-width:1200px) {
   .modalidade {
     margin-left: auto !important;
@@ -52,70 +47,15 @@
     width: 75%;
   }
 }
-/*cards*/
-.imagem-academia {
-  width: 50%;
-}
-@media (max-width:767px) {
-  .imagem-academia {
-    margin: auto;
-    width: 100%;
-    height: 80%;
-  }
-}
-
 
 /*contatos*/
 .informacoes,.mapa{width:50%;}.map{width:95%;}
-.informacoes .bi {font-size: 20px;color: #0dcaf0;}
+.informacoes .bi{font-size:20px;color:#0dcaf0;}
 .informacoes a{color:white;}
 .informacoes a:hover{color:#0dcaf0;}
-/*.informacoes a:hover {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.informacoes a:hover:hover, .informacoes a:hover:focus, .informacoes a:hover:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}*/
 @media (max-width:700px) {
-  #contatos .container div{
-    display: flex;
-    flex-direction: column;      
-  }
-  .informacoes, .mapa{
-    width: 100%;          
-  }
-
-  .mapa {
-    padding-top: 10px;
-  }
-}
-
-/* Fade *//*
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
-  color: white;
-}*/
+  #contatos .container div{display:flex;flex-direction:column;}.informacoes, .mapa{width:100%;}.mapa{margin-top:10px;}}
+/**/
 
 /**EFEITOS HOVER**/
 /* Sweep To Top */
