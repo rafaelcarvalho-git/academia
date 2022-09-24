@@ -368,29 +368,6 @@ a:hover, a:focus {
   opacity: 0.9;
 }
 
-.team-content-overlay li a {
-  color: #fff;
-}
-.team-content-overlay li a:hover {
-  background: #C8D94A;
-}
-
-.team-item .card-body {
-  margin-top: -120px;
-}
-
-.team-content-overlay {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  opacity: 0;
-  width: 100%;
-  background-color: rgba(41, 40, 45, 0.85);
-  transition: opacity 0.3s ease-out;
-}
-
 .overlay-content {
   width: 100%;
   position: absolute;
@@ -402,45 +379,10 @@ a:hover, a:focus {
   transform: translateY(-40%);
 }
 
-.team-item:hover .team-content-overlay {
-  opacity: 1;
-}
-
-.team-item:hover .card-body {
-  opacity: 0;
-}
-
-.team-wrap .card-subtitle {
-  position: relative;
-}
-.team-wrap .card-subtitle:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  max-width: 26px;
-  border-top: 4px solid #ddd;
-  margin-top: 20px;
-}
-.team-wrap ul li a {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #dedede;
-  color: #232323;
-  display: inline-block;
-  text-align: center;
-  padding-top: 6px;
-}
-.team-wrap ul li a:hover {
-  background: #C8D94A;
-  border-color: #C8D94A;
-  color: #fff !important;
-}
-
 .divider {
   margin: 0 auto;
   background: #C8D94A;
-  width: 45px;
+  width: 65px;
   height: 4px;
 }
 
@@ -619,19 +561,8 @@ a:hover, a:focus {
   .lead {
     font-size: 1rem;
   }
-  .media {
-    display: block;
-  }
-  .media-body {
-    margin-top: 20px;
-  }
   .number {
     font-size: 50px;
     line-height: 65px;
   }
-}
-@media (max-width: 768px) {
-  .media {display: block;}
-  .media-body {margin-top: 20px;}
-  .services .media img {width: 100% !important;}
 }
