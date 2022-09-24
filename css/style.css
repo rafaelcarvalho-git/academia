@@ -165,7 +165,7 @@ html, body {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .section-title {
@@ -278,7 +278,7 @@ a:hover, a:focus {
 }
 
 .slider {
-  background: url("../images/bg-7.jpg") no-repeat 0% 30%;
+  background: url("../img/bg-7.jpg") no-repeat 0% 30%;
   background-size: cover;
   padding: 180px 0px;
 }
@@ -305,18 +305,6 @@ a:hover, a:focus {
   line-height: 120px;
   position: absolute;
   top: 10px;
-}
-
-.why .card {
-  transition: all 0.4s ease 0s;
-}
-.why .card:hover {
-  background: #181a23;
-}
-
-.why .card:hover h3,
-.why .card:hover p {
-  color: #fff;
 }
 
 .hover-style-1 {
@@ -386,11 +374,6 @@ a:hover, a:focus {
   height: 4px;
 }
 
-.cta {
-  background: url("../images/bg/slide2.jpg") fixed 50% 50% no-repeat;
-  background-size: cover;
-}
-
 .w-40 {
   width: 40%;
 }
@@ -440,17 +423,6 @@ a:hover, a:focus {
 
 .mt--170 {
   margin-top: -170px;
-}
-
-.blog .card a h4 {
-  font-weight: 700;
-}
-.blog .card a h4:hover {
-  color: #C8D94A;
-}
-
-.blog-post-meta span {
-  font-size: 13px;
 }
 
 .lh-25 {
@@ -535,11 +507,6 @@ a:hover, a:focus {
 .footer-socials li a {
   color: #fff;
   opacity: 0.8;
-}
-
-.recent-blog a {
-  line-height: 1.5;
-  font-size: 14px;
 }
 
 .footer-socials li a {
