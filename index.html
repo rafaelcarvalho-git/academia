@@ -14,16 +14,26 @@
 <body>
 <header class="slider">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<img class="mb-5 mx-auto text-center w-100" src="img/academia-logo.png" alt="">
+		<div class="t row">
+			<div class="col-lg-5 col-sm-12">
+				<img class="w-100" src="img/academia-logo.png" alt="">
 			</div>
-			<div class="col-md-8">				
-				<h1 class="text-uppercase text-white mb-5">Step up your <span class="text-color">fitness Challange</span><br>with us</h1>
-				<a href="https://api.whatsapp.com/send/?phone=5588988573004&text&app_absent=0" target="_blank" class="btn btn-main ">Agende sua aula experimental <i class="ti-angle-right ml-3"></i></a>				
-			</div>
-			
+			<div class="col-lg-7 col-sm-12">				
+				<h1 class="text-uppercase text-white text-right mb-5">Step up your <span class="text-color">Challenge</span><br>with us</h1>
+				<a href="https://api.whatsapp.com/send/?phone=5588988573004&text&app_absent=0" target="_blank" class="btn btn-main" style="margin-left: 280px;">Agende sua aula experimental</a>				
+			</div>    
 		</div>
+		<style>
+			@media(max-width:991px){
+				.t {
+					flex-direction: column-reverse;
+			}
+			.t div {
+				grid-row: 10;
+			}
+			}
+			
+		</style>
 	</div>
 </header>
 
