@@ -425,6 +425,14 @@ a:hover, a:focus {
   background: #111;
 }
 
+.pacote {
+  border-bottom: 4px solid black;
+  border-radius: 5px;
+}
+.pacote h4, .pacote h2 {
+  margin: 0;margin-bottom:-5px;padding:0;
+}
+
 /*=== MEDIA QUERY ===*/
 @media (max-width: 480px) {
   .slider h1 {
