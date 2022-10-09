@@ -166,7 +166,7 @@ html,body{overflow-x:hidden;width:100%;}
 @media (max-width: 480px) {
   .slider h1 {
     font-size: 64px;
-    line-height: 48px;
+    line-height: 64px;
   }
   .text-lg{font-size:28px;line-height:38px;}.lead{font-size:1rem;}
   #modalidades i {font-size: 56px;line-height: 66px;}
