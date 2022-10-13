@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Montserrat|Poppins:400,500,600,700");
+/*#E0F257
+#CBD95F
+#731A12
+#BF2424*/
 body {
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
@@ -64,7 +68,6 @@ html,body{overflow-x:hidden;width:100%;}
   --bs-btn-focus-shadow-rgb: 211, 100, 213;
   color: white !important;
 }
-
 .btn-insta:hover {
   background: linear-gradient(45deg, #2f49ce, #4740c4, #742da3, #a82770, #cd275e, #e30909);
   color: white !important;transform: translateY(-5px);
@@ -87,23 +90,15 @@ html,body{overflow-x:hidden;width:100%;}
   background: black;
   opacity: 0.8;
 }
-
 .slider{
   background: url("../img/bg-7.jpg") no-repeat 0% 25%;
   background-size: cover;
   padding: 64px 0px;
   position: relative;
 }.slider h1{font-size:95px;line-height:95px;}
-.slider span.subhead{
-  color: #fff;
-  letter-spacing: 5px;
-  border: 2px solid #fff;
-  padding: 3px 15px 5px 15px;
-  opacity: 0.8;
-}
 
 @media (min-width:768px){
-  .hvr-grow {  
+  .hover-grow {  
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -113,15 +108,14 @@ html,body{overflow-x:hidden;width:100%;}
     transition-property: transform;
     cursor: pointer;
   }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  .hover-grow:hover, .hover-grow:focus, .hover-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-  
-  .hover-style-1 {
+  .hover-color {
     position: relative;
   }
-  .hover-style-1:before {
+  .hover-color:before {
     position: absolute;
     content: "";
     left: 0px;
@@ -132,19 +126,19 @@ html,body{overflow-x:hidden;width:100%;}
     background: linear-gradient(90deg, #C8D94A 0%, #CDD973 100%);
     border-color: #C8D94A;
   }
-  .hover-style-1 h3, .hover-style-1 p, .hover-style-1 a, .hover-style-1 i, .hover-style-1 h4 {
+  .hover-color h3, .hover-color p, .hover-color a, .hover-color i, .hover-color h4 {
     position: relative;
     transition: all 600ms ease;
   }
-  .hover-style-1:hover:before {height: 100%;}
-  .hover-style-1:hover a {color: rgba(255, 255, 255, 0.8) !important;}
-  .hover-style-1:hover h3,
-  .hover-style-1:hover h4,
-  .hover-style-1:hover p,
-  .hover-style-1:hover a {
+  .hover-color:hover:before {height: 100%;}
+  .hover-color:hover a {color: rgba(255, 255, 255, 0.8) !important;}
+  .hover-color:hover h3,
+  .hover-color:hover h4,
+  .hover-color:hover p,
+  .hover-color:hover a {
     color: #fff;
-  }.hover-style-1:hover i {color: rgba(255, 255, 255, 0.8) !important;}
-  .informacoes a:hover{color:#C8D94A;}
+  }.hover-color:hover i {color: rgba(255, 255, 255, 0.8) !important;}
+  .informacoes a:hover{color:#C8D94A !important;}
 }
 
 .divider {
@@ -162,7 +156,6 @@ html,body{overflow-x:hidden;width:100%;}
   color: #fff !important;
 }
 
-/*=== MEDIA QUERY ===*/
 @media (max-width: 480px) {
   .slider h1 {
     font-size: 64px;
@@ -171,14 +164,9 @@ html,body{overflow-x:hidden;width:100%;}
   .text-lg{font-size:28px;line-height:38px;}.lead{font-size:1rem;}
   #modalidades i {font-size: 56px;line-height: 66px;}
 }
-@media (max-width:768px){
-  .tabela-precos {
-    max-height: 420px;
-    overflow-y: auto;
-  }
-}
-
+@media (max-width:768px){.tabela-precos {max-height: 420px;overflow-y: auto;}}
 .table td{font-size:1.350rem;}.preco{min-width:130px;}
 @media (max-width:991px){.card{margin-bottom:25px;}}
 .map {width: 95%;max-width:600px;height:240px;}					
-.informacoes .bi{font-size:20px;color:#C8D94A;margin-right: 10px;}						
+.informacoes .bi{font-size:20px;color:#C8D94A;margin-right: 10px;}		
+.card a{max-width:120px;text-decoration:none;}.card a:hover{color:#a6b151;}						
