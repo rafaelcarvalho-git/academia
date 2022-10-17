@@ -3,6 +3,14 @@
 #CBD95F
 #731A12
 #BF2424*/
+:root {
+  --cor-1: #C8D94A;
+  --cor-2: #CDD973;
+  --cor-3: #731A12;
+  --cor-4: #BF2424;
+  /*--cor-5: #CBD95F;*/
+}
+
 body {
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
@@ -27,7 +35,7 @@ h6{font-size:16px;text-transform:uppercase;font-weight:400;}
 .font-secondary{font-family:"Montserrat",sans-serif;}
 html,body{overflow-x:hidden;width:100%;}
 .text-color {
-  color: #C8D94A;
+  color: var(--cor-1);
 }
 .text-black {
   color: #232323;
@@ -38,7 +46,6 @@ html,body{overflow-x:hidden;width:100%;}
 .font-size-13{font-size:13px;}
 .letter-spacing{letter-spacing:1px;}
 .bg-black-50 {background:#181a23;}
-.bg-black{background:#111;}
 
 .btn {
   display: inline-block;
@@ -53,11 +60,11 @@ html,body{overflow-x:hidden;width:100%;}
 }
 
 .btn-main{
-  background: linear-gradient(90deg, #C8D94A 0%, #CDD973 100%);
+  background: linear-gradient(90deg, var(--cor-1) 0%, #CDD973 100%);
   color: #fff;
 }
 .btn-main:hover{
-  background: linear-gradient(90deg, #CDD973 0%, #C8D94A 100%);
+  background: linear-gradient(90deg, #CDD973 0%, var(--cor-1) 100%);
   color: #fff !important;
   transform: translateY(-5px);
 }.btn.active:focus,.btn:active:focus,.btn:focus {outline:0;}
@@ -123,8 +130,8 @@ html,body{overflow-x:hidden;width:100%;}
     width: 100%;
     height: 0px;
     transition: all 600ms ease;
-    background: linear-gradient(90deg, #C8D94A 0%, #CDD973 100%);
-    border-color: #C8D94A;
+    background: linear-gradient(90deg, var(--cor-1) 0%, #CDD973 100%);
+    border-color: var(--cor-1);
   }
   .hover-color h3, .hover-color p, .hover-color a, .hover-color i, .hover-color h4 {
     position: relative;
@@ -138,12 +145,12 @@ html,body{overflow-x:hidden;width:100%;}
   .hover-color:hover a {
     color: #fff;
   }.hover-color:hover i {color: rgba(255, 255, 255, 0.8) !important;}
-  .informacoes a:hover{color:#C8D94A !important;}
+  .informacoes a:hover{color:var(--cor-1) !important;}
 }
 
 .divider {
   margin: 0 auto;
-  background: #C8D94A;
+  background: var(--cor-1);
   width: 65px;
   height: 4px;
 }
@@ -171,17 +178,19 @@ html,body{overflow-x:hidden;width:100%;}
 .table td{font-size:1.350rem;}.preco{min-width:130px;}
 @media (max-width:991px){.card{margin-bottom:25px;}}
 .map {width: 95%;max-width:600px;height:240px;}					
-.informacoes .bi{font-size:20px;color:#C8D94A;margin-right: 10px;}		
+.informacoes .bi{font-size:20px;color:var(--cor-1);margin-right: 10px;}		
 .card a{max-width:120px;text-decoration:none;}.card a:hover{color:#a6b151;}						
 
 .follow-widget a {
- background: green;
  min-width: 38px;
  min-height: 38px;
  border-radius: 100%;
- margin: 0 auto 0 auto;
+ margin: 7.5px auto 7.5px auto;
  color: white !important;
-}.follow-widget a:hover{background: red;}
+}
 .follow-widget i{position:relative;top:5px;}
 .icofont-facebook{font-size:18px;}
 #face-ico{background:#4267B2;}#wpp-ico{background:#25D366;}
+.follow-widget a, .card{transition:all 0.5s ease;}.follow-widget a:hover{transform:translateY(-4px);}
+.card:hover{transform:translateY(-5px);}
+.logo-academia{min-width:280px !important;max-width:500px !important;}
