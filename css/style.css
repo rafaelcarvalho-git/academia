@@ -5,11 +5,9 @@
 #731A12
 #BF2424*/
 :root {
-  --cor-1: #C8D94A;
-  --cor-2: #CDD973;
-  --cor-3: #731A12;
-  --cor-4: #BF2424;
-  /*--cor-5: #CBD95F;*/
+  --cor-1: #ba282b;
+  --cor-2: #b97171;
+  --cor-3: #731a12;
 }
 
 body {
@@ -129,12 +127,13 @@ body {
 }
 
 .btn-main {
-  background: linear-gradient(90deg, var(--cor-1) 0%, #CDD973 100%);
+  background: linear-gradient(90deg, var(--cor-1) 0%, var(--cor-2) 100%);
   color: #fff;
+  box-shadow: none !important;
 }
 
 .btn-main:hover {
-  background: linear-gradient(90deg, #CDD973 0%, var(--cor-1) 100%);
+  /* background: linear-gradient(90deg, var(--cor-2) 0%, var(--cor-1) 100%); */
   color: #fff !important;
   transform: translateY(-5px);
 }
@@ -147,14 +146,30 @@ body {
 
 .btn-insta,
 #insta-ico {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
   border: none;
   --bs-btn-focus-shadow-rgb: 211, 100, 213;
   color: white !important;
 }
 
 .btn-insta:hover {
-  background: linear-gradient(45deg, #2f49ce, #4740c4, #742da3, #a82770, #cd275e, #e30909);
+  background: linear-gradient(
+    45deg,
+    #2f49ce,
+    #4740c4,
+    #742da3,
+    #a82770,
+    #cd275e,
+    #e30909
+  );
   color: white !important;
   transform: translateY(-5px);
 }
@@ -206,7 +221,7 @@ body {
   line-height: 95px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .hover-grow {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -237,7 +252,7 @@ body {
     width: 100%;
     height: 0px;
     transition: all 600ms ease;
-    background: linear-gradient(90deg, var(--cor-1) 0%, #CDD973 100%);
+    background: linear-gradient(90deg, var(--cor-1) 0%, var(--cor-2) 100%);
     border-color: var(--cor-1);
   }
 
@@ -323,7 +338,7 @@ body {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .slider h1 {
     font-size: 52px;
     line-height: 54px;
@@ -336,14 +351,14 @@ body {
 }
 
 .table td {
-  font-size: 1.350rem;
+  font-size: 1.35rem;
 }
 
 .preco {
   min-width: 130px;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .card {
     margin-bottom: 25px;
   }
@@ -367,7 +382,7 @@ body {
 }
 
 .card a:hover {
-  color: #a6b151;
+  color: #b97171;
 }
 
 .follow-widget a {
@@ -388,11 +403,11 @@ body {
 }
 
 #face-ico {
-  background: #4267B2;
+  background: #4267b2;
 }
 
 #wpp-ico {
-  background: #25D366;
+  background: #25d366;
 }
 
 .follow-widget a,
@@ -411,4 +426,22 @@ body {
 .logo-academia {
   min-width: 280px !important;
   max-width: 500px !important;
+}
+
+.sublogo {
+  font-size: 24px;
+}
+
+.btn-secondary {
+  border: 2px solid var(--cor-1);
+  background: transparent;
+  color: #181a23;
+}
+.btn-secondary:hover {
+  border: 2px solid var(--cor-1);
+  background: var(--cor-1);
+}
+
+.btn-secondary:hover {
+  color: #fff !important;
 }
